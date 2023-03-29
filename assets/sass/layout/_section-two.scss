@@ -46,13 +46,14 @@
             content: "";
             width: .88rem;
             height: .88rem;
-            top: 0.15rem;
+            top: 0.2rem;
             left: 74.5%;
             margin: auto;
             border-radius: 50%;
             background-color: $theme-white;
 
             @include breakpoint (tablet) {
+                top: 0.15rem;
                 left: 78.2%;
             }
         }
