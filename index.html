@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="sr-only">Fylo data storage component</h1>
+    <main>
+        <section class="section section-one">
+            <img src="./assets/images/logo.svg" alt="Fylo" class="section__logo">
+            <div class="section-one__icon-container">
+                <img src="./assets/images/icon-document.svg" alt="" class="section-one__icon ection-one__icon-one">
+                <img src="./assets/images/icon-folder.svg" alt="" class="section-one__icon ection-one__icon-one">
+                <img src="./assets/images/icon-upload.svg" alt="" class="section-one__icon ection-one__icon-one">
+            </div>
+        </section>
+        <section class="section section-two">
+            <h2 class="section-two__title">You’ve used <span class="section-two__number">815 GB</span> of your storage</h2>
+            <div class="section-two__meter-container">
+                <meter min="0" value="815" max="1000" title="GB"></meter>
+                <p class="section-two__count">
+                    <span>0 GB</span>
+                    <span>1000 GB</span>
+                </p>
+            </div>
+        </section>
+        <div class="notice">
+            <p class="notice__text">185<span class="notice__paragraph">GB Left</span></p>
+        </div>
+    </main>    
+</body>
+</html>
