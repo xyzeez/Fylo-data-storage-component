@@ -28,7 +28,7 @@
     @include breakpoint (tablet) {
         top: -3rem;
         bottom: auto;
-        right: 3rem;
+        right: 2.5rem;
         border-radius: .6rem .6rem 0 .6rem;
 
         &::after {
@@ -37,7 +37,7 @@
             width: 2.1875rem;
             height: 1.875rem;
             bottom: -1.5rem;
-            right: 0rem;
+            right: 0;
             clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
             background-color: $theme-white;
         }

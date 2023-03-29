@@ -165,11 +165,10 @@ main {
   width: 100%;
 }
 .section-two__meter {
-  position: relative;
+  display: block;
   width: 100%;
-  height: -moz-min-content;
-  height: min-content;
   height: 1.25rem;
+  padding: 0.125rem;
   border-radius: 5rem;
   overflow: hidden;
   background: none;
@@ -178,36 +177,25 @@ main {
 .section-two__meter::-webkit-meter-bar {
   width: 100%;
   height: 1.25rem;
+  padding: 0.125rem 0;
+  border: none;
   background: none;
-  border: 0.125rem solid hsl(229, 57%, 11%);
-  background-color: hsl(229, 57%, 11%);
 }
-.section-two__meter::after {
-  position: absolute;
-  content: "";
-  width: 0.88rem;
-  height: 0.88rem;
-  top: 0.18rem;
-  left: 74.5%;
-  margin: auto;
-  border-radius: 50%;
-  background-color: hsl(0, 0%, 100%);
-}
-@media screen and (min-width: 48rem) {
-  .section-two__meter::after {
-    top: 0.15rem;
-    left: 78.2%;
-  }
+.section-two__meter::-moz-meter-bar {
+  width: 100%;
+  border-radius: 5rem;
+  background: none;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
 .section-two__meter::-webkit-meter-optimum-value {
-  position: relative;
   border-radius: 5rem;
+  background: none;
   background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-  background-size: 100% 100%;
 }
 .section-two__count {
   display: flex;
   font-weight: 700;
+  margin-top: 0.3125rem;
 }
 .section-two__count-right {
   margin-left: auto;
@@ -249,7 +237,7 @@ main {
   .notice {
     top: -3rem;
     bottom: auto;
-    right: 3rem;
+    right: 2.5rem;
     border-radius: 0.6rem 0.6rem 0 0.6rem;
   }
   .notice::after {
@@ -258,9 +246,26 @@ main {
     width: 2.1875rem;
     height: 1.875rem;
     bottom: -1.5rem;
-    right: 0rem;
+    right: 0;
     -webkit-clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
             clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
     background-color: hsl(0, 0%, 100%);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .notice {
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 }/*# sourceMappingURL=styles.css.map */

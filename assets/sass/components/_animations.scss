@@ -1,2 +1,23 @@
 @use '../global' as *;
 @use '../components' as *;
+
+//notice-animation
+@include breakpoint (tablet) {
+    .notice {
+        animation: bounce 2s ease infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
