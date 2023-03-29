@@ -1,0 +1,50 @@
+@use '../global' as *;
+@use '../components' as *;
+
+.section-two {
+    font-size: 0.875rem;
+    color: $theme-pale-blue;
+    padding-bottom: 4rem;
+
+    &__title {
+        font-weight: $normal;
+        margin-bottom: .2rem;
+    }
+
+    &__number {
+        font-weight: $bold;
+        color: $theme-white;
+    }
+
+    &__meter-container {
+        width: 100%;
+    }
+
+    &__meter {
+        width: 100%;
+        height: 2.1875rem;
+        border-radius: 5rem;
+
+        &::-webkit-meter-bar {
+            background: none;
+            background-color: $theme-dark-blue;
+            border: 0.125rem solid $theme-dark-blue;
+        }
+
+        &::-webkit-meter-optimum-value {
+            border-radius: 5rem;
+            background: linear-gradient(90deg, $theme-gradient-one, $theme-gradient-two);
+            background-size: 100% 100%;
+        }
+    }
+
+    &__count {
+        display: flex;
+        font-weight: $bold;
+        margin-top: -0.3125rem;
+
+        &-right {
+            margin-left: auto;
+        }
+    }
+}

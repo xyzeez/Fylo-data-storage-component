@@ -64,4 +64,126 @@ address {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: hsl(229, 57%, 11%);
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  background-color: hsl(228, 56%, 26%);
+}
+
+.section-one {
+  border-top-right-radius: 6rem;
+}
+.section-one__logo {
+  width: 9.375rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.section-one__icon-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.section-one__icon-listitem {
+  display: grid;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 0.6rem;
+  background-color: hsl(229, 57%, 11%);
+}
+.section-one__icon {
+  margin: auto;
+}
+
+.section-two {
+  font-size: 0.875rem;
+  color: hsl(243, 100%, 93%);
+  padding-bottom: 4rem;
+}
+.section-two__title {
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.section-two__number {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.section-two__meter-container {
+  width: 100%;
+}
+.section-two__meter {
+  width: 100%;
+  height: 2.1875rem;
+  border-radius: 5rem;
+}
+.section-two__meter::-webkit-meter-bar {
+  background: none;
+  background-color: hsl(229, 57%, 11%);
+  border: 0.125rem solid hsl(229, 57%, 11%);
+}
+.section-two__meter::-webkit-meter-optimum-value {
+  border-radius: 5rem;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-size: 100% 100%;
+}
+.section-two__count {
+  display: flex;
+  font-weight: 700;
+  margin-top: -0.3125rem;
+}
+.section-two__count-right {
+  margin-left: auto;
+}
+
+.notice {
+  position: absolute;
+  display: grid;
+  bottom: -2.1875rem;
+  color: hsl(229, 57%, 11%);
+  padding: 0.625rem 1.5625rem;
+  border-radius: 0.8rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.notice__text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+.notice__paragraph {
+  font-size: 0.875rem;
+  letter-spacing: 0.0938rem;
+  color: hsl(229, 7%, 55%);
 }/*# sourceMappingURL=styles.css.map */

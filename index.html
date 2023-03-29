@@ -15,25 +15,31 @@
     <h1 class="sr-only">Fylo data storage component</h1>
     <main>
         <section class="section section-one">
-            <img src="./assets/images/logo.svg" alt="Fylo" class="section__logo">
-            <div class="section-one__icon-container">
-                <img src="./assets/images/icon-document.svg" alt="" class="section-one__icon ection-one__icon-one">
-                <img src="./assets/images/icon-folder.svg" alt="" class="section-one__icon ection-one__icon-one">
-                <img src="./assets/images/icon-upload.svg" alt="" class="section-one__icon ection-one__icon-one">
-            </div>
+            <img src="./assets/images/logo.svg" alt="Fylo" class="section-one__logo">
+            <ul class="section-one__icon-list">
+                <li class="section-one__icon-listitem">
+                    <img src="./assets/images/icon-document.svg" alt="" class="section-one__icon">
+                </li>
+                <li class="section-one__icon-listitem">
+                    <img src="./assets/images/icon-folder.svg" alt="" class="section-one__icon">
+                </li>
+                <li class="section-one__icon-listitem">
+                    <img src="./assets/images/icon-upload.svg" alt="" class="section-one__icon">
+                </li>
+            </ul>
         </section>
         <section class="section section-two">
-            <h2 class="section-two__title">You’ve used <span class="section-two__number">815 GB</span> of your storage</h2>
+            <p class="section-two__title">You’ve used <span class="section-two__number">815 GB</span> of your storage</p>
             <div class="section-two__meter-container">
-                <meter min="0" value="815" max="1000" title="GB"></meter>
+                <meter min="0" value="815" max="1000" title="GB" class="section-two__meter"></meter>
                 <p class="section-two__count">
-                    <span>0 GB</span>
-                    <span>1000 GB</span>
+                    <span class="section-two__count-left">0 GB</span>
+                    <span class="section-two__count-right">1000 GB</span>
                 </p>
             </div>
         </section>
         <div class="notice">
-            <p class="notice__text">185<span class="notice__paragraph">GB Left</span></p>
+            <h2 class="notice__text">185<span class="notice__paragraph">GB LEFT</span></h2>
         </div>
     </main>    
 </body>

@@ -1,2 +1,15 @@
 @use '../global' as *;
 @use '../components' as *;
+
+body {
+    @include flex;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: $theme-font;
+    text-align: center;
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: $theme-dark-blue;
+}

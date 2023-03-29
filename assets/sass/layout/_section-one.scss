@@ -1,0 +1,32 @@
+@use '../global' as *;
+@use '../components' as *;
+
+.section-one {
+    border-top-right-radius: 6rem;
+
+    &__logo {
+        width: 9.375rem;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    &__icon-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    &__icon-listitem {
+        display: grid;
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: .6rem;
+        background-color: $theme-dark-blue;
+    }
+
+    &__icon {
+        margin: auto;
+    }
+}

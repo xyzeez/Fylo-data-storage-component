@@ -1,0 +1,16 @@
+@use '../global' as *;
+@use '../components' as *;
+
+main {
+    position: relative;
+    @include flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: .8rem;
+    background-color: $theme-blue;
+}
