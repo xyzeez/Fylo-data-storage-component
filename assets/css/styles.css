@@ -278,7 +278,7 @@ main {
   }
 }
 .section-one__icon-listitem {
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 @media (hover: hover) {
   .section-one__icon-listitem:is(:hover) {
