@@ -24,17 +24,37 @@
     }
 
     &__meter {
+        position: relative;
         width: 100%;
-        height: 2.1875rem;
+        height: min-content;
+        height: 1.25rem;
         border-radius: 5rem;
+        overflow: hidden;
+        background: none;
+        background-color: $theme-dark-blue;
 
         &::-webkit-meter-bar {
+            width: 100%;
+            height: 1.25rem;
             background: none;
+            border: 0.125rem solid $theme-dark-blue;
             background-color: $theme-dark-blue;
-            border: 0.1563rem solid $theme-dark-blue;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            top: 0.125rem;
+            left: 78%;
+            margin: auto;
+            border-radius: 50%;
+            background-color: $theme-white;
         }
 
         &::-webkit-meter-optimum-value {
+            position: relative;
             border-radius: 5rem;
             background: linear-gradient(90deg, $theme-gradient-one, $theme-gradient-two);
             background-size: 100% 100%;
@@ -44,7 +64,7 @@
     &__count {
         display: flex;
         font-weight: $bold;
-        margin-top: -0.3125rem;
+        //margin-top: -0.3125rem;
 
         &-right {
             margin-left: auto;
