@@ -19,10 +19,14 @@
     }
 
     &__icon-listitem {
+        overflow: hidden;
+        border-radius: .6rem;
+    }
+
+    &__icon-link {
         display: grid;
         width: 3rem;
         height: 3rem;
-        border-radius: .6rem;
         background-color: $theme-dark-blue;
     }
 

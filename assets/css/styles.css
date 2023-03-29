@@ -129,10 +129,13 @@ main {
   width: 100%;
 }
 .section-one__icon-listitem {
+  overflow: hidden;
+  border-radius: 0.6rem;
+}
+.section-one__icon-link {
   display: grid;
   width: 3rem;
   height: 3rem;
-  border-radius: 0.6rem;
   background-color: hsl(229, 57%, 11%);
 }
 .section-one__icon {
@@ -272,5 +275,22 @@ main {
 @media (prefers-reduced-motion) {
   .notice {
     animation-play-state: paused;
+  }
+}
+.section-one__icon-listitem {
+  transition: all 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .section-one__icon-listitem:is(:hover) {
+    transform: translateY(-2px);
+  }
+}
+.section-one__icon-listitem:has(.section-one__icon-link:focus) {
+  transform: translateY(-2px);
+  border: 1px solid hsl(243, 100%, 93%);
+}
+@media (hover: hover) {
+  .section-one__icon-link {
+    cursor: pointer;
   }
 }/*# sourceMappingURL=styles.css.map */

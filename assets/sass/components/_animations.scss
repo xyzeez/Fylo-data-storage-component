@@ -27,3 +27,27 @@
         animation-play-state: paused;
     }
 }
+
+//hover-animation
+.section-one__icon {
+    &-listitem {
+        transition: all 0.2s ease-in-out;
+
+        @include hover {
+            &:is(:hover) {
+                transform: translateY(-2px);
+            }
+        }
+
+        &:has(.section-one__icon-link:focus) {
+            transform: translateY(-2px);
+            border: 1px solid $theme-pale-blue
+        }
+    }
+
+    &-link {
+        @include hover {
+            cursor: pointer;
+        }
+    }
+}

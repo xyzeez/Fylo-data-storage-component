@@ -14,21 +14,21 @@
 <body>
     <main>
         <h1 class="sr-only">Fylo data storage component</h1>
-        <section class="section section-one">
+        <div class="section section-one">
             <img src="./assets/images/logo.svg" alt="Fylo" class="section-one__logo">
             <ul class="section-one__icon-list">
                 <li class="section-one__icon-listitem">
-                    <img src="./assets/images/icon-document.svg" alt="" class="section-one__icon">
+                    <a href="#" aria-label="Documents" class="section-one__icon-link"><img src="./assets/images/icon-document.svg" alt="" class="section-one__icon"></a>
                 </li>
                 <li class="section-one__icon-listitem">
-                    <img src="./assets/images/icon-folder.svg" alt="" class="section-one__icon">
+                    <a href="#" aria-label="Folders" class="section-one__icon-link"><img src="./assets/images/icon-folder.svg" alt="" class="section-one__icon"></a>
                 </li>
                 <li class="section-one__icon-listitem">
-                    <img src="./assets/images/icon-upload.svg" alt="" class="section-one__icon">
+                    <a href="#" aria-label="Uploads" class="section-one__icon-link"><img src="./assets/images/icon-upload.svg" alt="" class="section-one__icon"></a>
                 </li>
             </ul>
-        </section>
-        <section class="section section-two">
+        </div>
+        <div class="section section-two">
             <p class="section-two__title">You’ve used <span class="section-two__number">815 GB</span> of your storage</p>
             <div class="section-two__meter-container">
                 <meter min="0" value="815" max="1000" title="GB" class="section-two__meter"></meter>
@@ -40,7 +40,7 @@
             <div class="notice">
                 <p class="notice__text">185<span class="notice__paragraph">GB LEFT</span></p>
             </div>
-        </section>
+        </div>
     </main>    
 </body>
 </html>
