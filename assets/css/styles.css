@@ -185,17 +185,17 @@ main {
 .section-two__meter::after {
   position: absolute;
   content: "";
-  width: 1rem;
-  height: 1rem;
-  top: 0.125rem;
-  left: 76%;
+  width: 0.88rem;
+  height: 0.88rem;
+  top: 0.15rem;
+  left: 74.5%;
   margin: auto;
   border-radius: 50%;
   background-color: hsl(0, 0%, 100%);
 }
 @media screen and (min-width: 48rem) {
   .section-two__meter::after {
-    left: 79%;
+    left: 78.2%;
   }
 }
 .section-two__meter::-webkit-meter-optimum-value {
