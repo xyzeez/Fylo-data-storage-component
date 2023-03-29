@@ -24,4 +24,22 @@
         letter-spacing: 0.08rem;
         color: $theme-gray-blue;
     }
+
+    @include breakpoint (tablet) {
+        top: -3rem;
+        bottom: auto;
+        right: 3rem;
+        border-radius: .6rem .6rem 0 .6rem;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 40px;
+            bottom: -1.5rem;
+            right: -0.4999999599999999999999999999999999px;
+            clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
+            background-color: $theme-white;
+        }
+    }
 }

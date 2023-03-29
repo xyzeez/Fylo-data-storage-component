@@ -29,4 +29,9 @@
     &__icon {
         margin: auto;
     }
+
+    @include breakpoint (tablet) {
+        width: 100%;
+        max-width: 330px;
+    }
 }

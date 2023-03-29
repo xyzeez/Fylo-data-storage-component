@@ -77,29 +77,42 @@ body {
   text-align: center;
   background-image: url(../images/bg-mobile.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
   background-color: hsl(229, 57%, 11%);
 }
+@media screen and (min-width: 48rem) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-size: contain;
+  }
+}
 
 main {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  max-width: 60rem;
 }
 
 .section {
   width: 100%;
-  max-width: 21.875rem;
+  max-width: 330px;
   padding: 2.5rem;
   border-radius: 0.8rem;
   background-color: hsl(228, 56%, 26%);
 }
 
+@media screen and (min-width: 48rem) {
+  main {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+}
 .section-one {
   border-top-right-radius: 6rem;
 }
@@ -125,8 +138,18 @@ main {
 .section-one__icon {
   margin: auto;
 }
+@media screen and (min-width: 48rem) {
+  .section-one {
+    width: 100%;
+    max-width: 330px;
+  }
+}
 
 .section-two {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 0.875rem;
   color: hsl(243, 100%, 93%);
 }
@@ -164,6 +187,16 @@ main {
 .section-two__count-right {
   margin-left: auto;
 }
+@media screen and (min-width: 48rem) {
+  .section-two {
+    width: 100%;
+    max-width: 100%;
+  }
+  .section-two__title {
+    text-align: left;
+    align-self: flex-start;
+  }
+}
 
 .notice {
   position: absolute;
@@ -186,4 +219,23 @@ main {
   font-size: 0.75rem;
   letter-spacing: 0.08rem;
   color: hsl(229, 7%, 55%);
+}
+@media screen and (min-width: 48rem) {
+  .notice {
+    top: -3rem;
+    bottom: auto;
+    right: 3rem;
+    border-radius: 0.6rem 0.6rem 0 0.6rem;
+  }
+  .notice::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 40px;
+    bottom: -1.5rem;
+    right: -0.49999996px;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
+            clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
+    background-color: hsl(0, 0%, 100%);
+  }
 }/*# sourceMappingURL=styles.css.map */

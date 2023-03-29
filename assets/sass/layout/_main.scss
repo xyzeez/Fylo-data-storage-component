@@ -2,20 +2,24 @@
 @use '../components' as *;
 
 main {
-    position: relative;
     @include flex;
     gap: 1rem;
     width: 100%;
+    max-width: 60rem;
 }
 
 .section {
     width: 100%;
-    max-width: 21.875rem;
+    max-width: 330px;
     padding: 2.5rem;
     border-radius: .8rem;
     background-color: $theme-blue;
 }
 
 @include breakpoint (tablet) {
-
+    main {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 2rem;
+    }
 }

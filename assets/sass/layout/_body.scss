@@ -9,7 +9,12 @@ body {
     text-align: center;
     background-image: url(../images/bg-mobile.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     background-color: $theme-dark-blue;
+
+    @include breakpoint (tablet) {
+        background-image: url(../images/bg-desktop.png);
+        background-size: contain;
+    }
 }
