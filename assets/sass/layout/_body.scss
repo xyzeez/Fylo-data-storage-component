@@ -15,6 +15,6 @@ body {
 
     @include breakpoint (tablet) {
         background-image: url(../images/bg-desktop.png);
-        background-size: contain;
+        background-size: 100% 50vh;
     }
 }
