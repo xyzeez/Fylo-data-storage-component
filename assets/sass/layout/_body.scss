@@ -4,7 +4,7 @@
 body {
     @include flex;
     min-height: 100vh;
-    padding: 1rem;
+    padding: 1.5rem;
     font-family: $theme-font;
     text-align: center;
     background-image: url(../images/bg-mobile.png);

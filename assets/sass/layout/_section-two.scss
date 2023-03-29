@@ -4,7 +4,6 @@
 .section-two {
     font-size: 0.875rem;
     color: $theme-pale-blue;
-    padding-bottom: 4rem;
 
     &__title {
         font-weight: $normal;
@@ -28,7 +27,7 @@
         &::-webkit-meter-bar {
             background: none;
             background-color: $theme-dark-blue;
-            border: 0.125rem solid $theme-dark-blue;
+            border: 0.1563rem solid $theme-dark-blue;
         }
 
         &::-webkit-meter-optimum-value {

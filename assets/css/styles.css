@@ -72,7 +72,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 1.5rem;
   font-family: "Raleway", sans-serif;
   text-align: center;
   background-image: url(../images/bg-mobile.png);
@@ -88,12 +88,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
 }
 
 .section {
   width: 100%;
+  max-width: 21.875rem;
   padding: 2.5rem;
   border-radius: 0.8rem;
   background-color: hsl(228, 56%, 26%);
@@ -103,7 +104,7 @@ main {
   border-top-right-radius: 6rem;
 }
 .section-one__logo {
-  width: 9.375rem;
+  max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
 }
@@ -116,8 +117,8 @@ main {
 }
 .section-one__icon-listitem {
   display: grid;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 0.6rem;
   background-color: hsl(229, 57%, 11%);
 }
@@ -128,7 +129,6 @@ main {
 .section-two {
   font-size: 0.875rem;
   color: hsl(243, 100%, 93%);
-  padding-bottom: 4rem;
 }
 .section-two__title {
   font-weight: 400;
@@ -149,7 +149,7 @@ main {
 .section-two__meter::-webkit-meter-bar {
   background: none;
   background-color: hsl(229, 57%, 11%);
-  border: 0.125rem solid hsl(229, 57%, 11%);
+  border: 0.1563rem solid hsl(229, 57%, 11%);
 }
 .section-two__meter::-webkit-meter-optimum-value {
   border-radius: 5rem;
@@ -170,20 +170,20 @@ main {
   display: grid;
   bottom: -2.1875rem;
   color: hsl(229, 57%, 11%);
-  padding: 0.625rem 1.5625rem;
-  border-radius: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
   background-color: hsl(0, 0%, 100%);
 }
 .notice__text {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin: 0 auto;
 }
 .notice__paragraph {
-  font-size: 0.875rem;
-  letter-spacing: 0.0938rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08rem;
   color: hsl(229, 7%, 55%);
 }/*# sourceMappingURL=styles.css.map */
