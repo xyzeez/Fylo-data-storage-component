@@ -47,10 +47,14 @@
             width: 1rem;
             height: 1rem;
             top: 0.125rem;
-            left: 78%;
+            left: 77%;
             margin: auto;
             border-radius: 50%;
             background-color: $theme-white;
+
+            @include breakpoint (tablet) {
+                left: 79%;
+            }
         }
 
         &::-webkit-meter-optimum-value {
