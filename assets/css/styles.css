@@ -233,7 +233,7 @@ main {
     width: 45px;
     height: 40px;
     bottom: -1.5rem;
-    right: -0.49999996px;
+    right: 0px;
     -webkit-clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
             clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 0%);
     background-color: hsl(0, 0%, 100%);
