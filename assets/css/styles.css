@@ -268,4 +268,9 @@ main {
       transform: translateY(0px);
     }
   }
+}
+@media (prefers-reduced-motion) {
+  .notice {
+    animation-play-state: paused;
+  }
 }/*# sourceMappingURL=styles.css.map */

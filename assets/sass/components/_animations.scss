@@ -21,3 +21,9 @@
         }
     }
 }
+
+@media (prefers-reduced-motion) {
+    .notice {
+        animation-play-state: paused;
+    }
+}
